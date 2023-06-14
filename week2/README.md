@@ -9,6 +9,14 @@
 ```
 <br/> 
 
+## 🧷 Figma
+![](https://velog.velcdn.com/images/soohyuneee/post/87c4a6ea-a983-456a-8152-80f62731f36f/image.png)
+<br/><br/>
+
+## ⭐️ 과제 결과
+### [배포링크](https://safehomes.vercel.app/)
+<br/>
+
 ## 📝 과제 설명
 ### 1차 과제
 - 시맨틱 태그를 최대한 사용하여 HTMl을 작성
@@ -17,3 +25,10 @@
 - main : 배너, 어플리케이션, 가격, 후기 section과 aside로 나누어 배치
 - footer : 사업자 등록 번호, 대표 등 웹사이트의 정보 표시  
 <br/> 
+
+### 2차 과제
+- 미디어 쿼리를 사용하여 1920, 1024, 768, 480 가로 크기의 반응형 작성하기
+- 주어진 Figma를 참고하여 CSS 작성
+- HTML로 나눈 영역별로 id를 지정하여 나누어 CSS 작성
+- CSS 선택자와 flex 속성을 적극 활용하여 레이아웃 작성
+- 파비콘 적용 후 vercel로 배포
