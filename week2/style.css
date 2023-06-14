@@ -107,19 +107,13 @@ h3 {
   margin-bottom: 53px;
 }
 
+article:nth-child(3) h3 {
+  margin-top: 22px;
+  margin-bottom: 71px;
+}
+
 span {
   font-weight: 500;
-}
-
-.desc_container {
-  display: flex;
-  flex-direction: column;
-}
-
-.desc_img {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 24px;
 }
 
 .desc_title {
@@ -131,11 +125,6 @@ span {
   margin-bottom: 17px;
   margin-left: 2px;
   line-height: 25px;
-}
-
-.desc_title td,
-.desc_content td {
-  width: 293px;
 }
 
 .desc_content {
@@ -157,6 +146,54 @@ span {
   border: none;
 }
 
+#descript_container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#descript_container li {
+  max-width: 293px;
+}
+
+#descript_container img {
+  margin-bottom: 24px;
+}
+
+#desc_list {
+  margin-bottom: 14px;
+}
+
+#desc_list li {
+  margin-bottom: 57px;
+}
+
+#desc_list span {
+  color: #0e7159;
+  font-weight: 500;
+  font-size: 21px;
+  margin-bottom: 9px;
+}
+
+.list_title {
+  color: #333d4b;
+  font-weight: 700;
+  font-size: 21px;
+  margin-bottom: 16px;
+}
+
+.list_content {
+  color: #6b7684;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.list_hide {
+  width: 293px;
+}
+
 /* 1024 */
 @media (max-width: 1024px) {
   nav button:first-child {
@@ -172,7 +209,8 @@ span {
   }
 
   #banner_container button,
-  .now_btn {
+  .now_btn,
+  .list_hide {
     display: none;
   }
 
@@ -182,6 +220,28 @@ span {
 
   h3 {
     font-size: 32px;
+    margin-bottom: 41px;
+  }
+
+  #descript_container li {
+    margin-bottom: 48px;
+  }
+
+  article {
+    margin-bottom: 123px;
+  }
+
+  article:nth-child(3) h3 {
+    margin-top: 0px;
+    margin-bottom: 43px;
+  }
+
+  #desc_list li:nth-last-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .desc_content {
+    margin-bottom: 0px;
   }
 }
 
@@ -198,6 +258,10 @@ span {
   #banner_container h2 {
     font-size: 36px;
   }
+
+  article {
+    margin-bottom: 85px;
+  }
 }
 
 /* 480 */
@@ -207,7 +271,7 @@ span {
   }
 
   #banner_container {
-    height: 409px;
+    height: 192px;
   }
 
   #banner_container h2 {
@@ -215,10 +279,30 @@ span {
   }
 
   #descript_container {
-    max-width: 293px;
+    max-width: 407px;
+  }
+
+  #descript_container li {
+    margin-bottom: 32px;
   }
 
   h3 {
     font-size: 21px;
+  }
+
+  #descript_container ul {
+    justify-content: center;
+  }
+
+  #desc_list li:nth-last-child(2) {
+    margin-bottom: 17px;
+  }
+
+  .desc_hide {
+    display: none;
+  }
+
+  article {
+    margin-bottom: 52px;
   }
 }
