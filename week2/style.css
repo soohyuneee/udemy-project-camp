@@ -424,7 +424,7 @@ footer ul {
   color: #6b7684;
   font-weight: 500;
   font-size: 14px;
-  letter-spacing: -0.25px;
+  letter-spacing: -0.3px;
 }
 
 footer li {
@@ -662,7 +662,7 @@ footer li:last-child {
   footer div {
     align-items: center;
     margin: 0 auto;
-    width: 89%;
+    width: 90%;
   }
 
   footer p {
