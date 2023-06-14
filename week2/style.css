@@ -663,5 +663,6 @@ footer li:last-child {
     margin-left: 0px;
     align-items: center;
     text-align: left;
+    width: 100%;
   }
 }
