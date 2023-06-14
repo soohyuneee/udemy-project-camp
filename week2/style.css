@@ -1,7 +1,10 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
 /* common css */
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Spoqa Han Sans';
 }
 
 body {
@@ -88,7 +91,7 @@ nav button:first-child {
 
 /* descript */
 #descript_container {
-  max-width: 975px;
+  max-width: 985px;
   margin: 0 auto;
 }
 
@@ -210,7 +213,7 @@ span {
 }
 
 #app_container div {
-  width: 455px;
+  width: 490px;
 }
 
 #app_container span {
@@ -460,7 +463,7 @@ footer li:last-child {
   }
 
   #descript_container {
-    max-width: 634px;
+    max-width: 660px;
   }
 
   h2 {
@@ -490,7 +493,7 @@ footer li:last-child {
   }
 
   #app_container {
-    max-width: 455px;
+    max-width: 475px;
   }
 
   #app_container li {
@@ -600,7 +603,7 @@ footer li:last-child {
   }
 
   #app_container {
-    max-width: 340px;
+    max-width: 360px;
   }
 
   h3 {
