@@ -662,7 +662,7 @@ footer li:last-child {
   footer div {
     align-items: center;
     text-align: left;
-    min-width: 100%;
+    max-width: 415px;
     margin: 0 auto;
   }
 }
