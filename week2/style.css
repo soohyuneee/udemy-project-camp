@@ -366,6 +366,36 @@ h3 {
   display: none;
 }
 
+/* aside */
+aside {
+  margin-top: 136px;
+  height: 608px;
+  background-color: #0e7159;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+aside h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+  margin-bottom: 62px;
+}
+
+aside button {
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 170px;
+  height: 60px;
+  color: #0e7159;
+  font-weight: 700;
+  font-size: 16px;
+}
+
 /* 1024 */
 @media (max-width: 1024px) {
   nav button:first-child {
@@ -448,6 +478,10 @@ h3 {
     font-size: 36px;
     margin-bottom: 39px;
   }
+
+  aside {
+    margin-top: 112px;
+  }
 }
 
 /* 768 */
@@ -470,6 +504,12 @@ h3 {
 
   #app_container li {
     margin-bottom: 127px;
+  }
+
+  aside h2 {
+    font-size: 48px;
+    line-height: 58px;
+    margin-bottom: 42px;
   }
 }
 
@@ -568,5 +608,11 @@ h3 {
   .review_hide {
     margin-top: 25px;
     display: block;
+  }
+
+  aside h2 {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 60px;
   }
 }
