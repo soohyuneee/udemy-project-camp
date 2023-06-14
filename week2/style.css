@@ -660,13 +660,9 @@ footer li:last-child {
   }
 
   footer div {
-    margin-left: 0px;
     align-items: center;
     text-align: left;
-    width: 100%;
-  }
-
-  footer p {
-    margin-left: 3px;
+    min-width: 421px;
+    margin: 0 auto;
   }
 }
