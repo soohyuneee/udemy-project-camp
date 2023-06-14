@@ -126,7 +126,6 @@ span {
   font-weight: 700;
   font-size: 21px;
   margin-bottom: 17px;
-  margin-left: 2px;
   line-height: 25px;
 }
 
@@ -265,7 +264,6 @@ h3 {
   background-color: #f2f3f4;
   border-radius: 16px;
   padding: 30px 24px;
-  text-align: left;
 }
 
 .price_title {
@@ -328,7 +326,6 @@ h3 {
   min-width: 560px;
   height: 240px;
   padding: 60px;
-  text-align: left;
 }
 
 #review_container li:nth-child(2) {
@@ -341,7 +338,6 @@ h3 {
 }
 
 .profile_content {
-  margin-left: 16px;
 }
 
 .profile_content span {
@@ -402,15 +398,15 @@ aside button {
 /* footer */
 footer {
   height: 159px;
+  margin-top: 20px;
 }
 
 footer div {
   height: 100%;
+  width: 425px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: left;
-  margin-left: 15%;
 }
 
 footer p {
@@ -419,6 +415,7 @@ footer p {
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 18px;
+  letter-spacing: -0.52 px;
 }
 
 footer ul {
@@ -552,7 +549,6 @@ footer li:last-child {
   }
 
   footer div {
-    margin-left: 44px;
   }
 }
 
@@ -661,8 +657,11 @@ footer li:last-child {
 
   footer div {
     align-items: center;
-    text-align: left;
-    max-width: 415px;
     margin: 0 auto;
+    width: 90%;
+  }
+
+  footer p {
+    width: 100%;
   }
 }
