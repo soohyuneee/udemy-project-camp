@@ -571,7 +571,7 @@ footer li:last-child {
   }
 
   #descript_container {
-    max-width: 420px;
+    max-width: 407px;
   }
 
   #descript_container li {
@@ -579,11 +579,11 @@ footer li:last-child {
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .h2_bigger {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   #descript_container ul {
