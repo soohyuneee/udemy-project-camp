@@ -338,6 +338,7 @@ h3 {
 }
 
 .profile_content {
+  margin-left: 16px;
 }
 
 .profile_content span {
@@ -407,6 +408,7 @@ footer div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-left: 15%;
 }
 
 footer p {
@@ -415,13 +417,13 @@ footer p {
   font-weight: 700;
   font-size: 16px;
   margin-bottom: 18px;
-  letter-spacing: -0.52 px;
 }
 
 footer ul {
   color: #6b7684;
   font-weight: 500;
   font-size: 14px;
+  letter-spacing: -0.25px;
 }
 
 footer li {
@@ -549,6 +551,7 @@ footer li:last-child {
   }
 
   footer div {
+    margin-left: 44px;
   }
 }
 
