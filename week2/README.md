@@ -19,7 +19,7 @@
 
 ## 📝 과제 설명
 ### 1차 과제
-- 시맨틱 태그를 최대한 사용하여 HTMl을 작성
+- 시맨틱 태그를 최대한 사용하여 HTML을 작성
 - header, main, footer로 body 안의 영역 설정
 - header : 로고와 nav 배치
 - main : 배너, 어플리케이션, 가격, 후기 section과 aside로 나누어 배치
