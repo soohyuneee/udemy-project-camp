@@ -345,6 +345,8 @@ h3 {
   color: #333d4b;
   font-weight: 700;
   font-size: 18px;
+  display: block;
+  text-align: left;
 }
 
 .profile_content p {
