@@ -14,7 +14,21 @@
 <br/><br/>
 
 ## ⭐️ 과제 결과
-### [배포링크](https://safehomes.vercel.app/)
+### [> 배포링크](https://safehomes.vercel.app/)
+<br/>
+
+**1920** 
+<img width="1440" alt="1920" src="https://github.com/soohyuneee/udemy-project-camp/assets/105588175/347eb912-727c-458f-9972-0322074d572c">
+
+**1024**
+<img width="1440" alt="1024" src="https://github.com/soohyuneee/udemy-project-camp/assets/105588175/44ed695f-5bab-4dd5-a81f-17f2fe4608df">
+
+**768**
+<img width="1440" alt="768" src="https://github.com/soohyuneee/udemy-project-camp/assets/105588175/f3c6ef3a-2a14-4a95-a4af-64c375fe5f21">
+
+**480**
+<img width="1440" alt="480" src="https://github.com/soohyuneee/udemy-project-camp/assets/105588175/17aa589e-a5aa-42ed-9a13-02998c056941">
+
 <br/>
 
 ## 📝 과제 설명
