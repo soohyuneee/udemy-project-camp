@@ -576,11 +576,11 @@ footer li:last-child {
   }
 
   h2 {
-    font-size: 21px;
+    font-size: 20px;
   }
 
   .h2_bigger {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   #descript_container ul {
@@ -651,7 +651,7 @@ footer li:last-child {
   }
 
   aside h2 {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 43px;
     margin-bottom: 60px;
   }
