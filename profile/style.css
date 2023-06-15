@@ -34,7 +34,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   body,
   html {
     font-size: 14px;
@@ -68,7 +68,7 @@ h1 {
   font-size: 5rem;
   line-height: 1.1;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 3rem;
   }
@@ -82,7 +82,7 @@ h4 {
   font-size: 2rem;
   margin: 0 0 1rem;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   h4 {
     font-size: 1.5rem;
   }
@@ -118,7 +118,7 @@ ul > li:before {
   line-height: 1.4;
   font-weight: 500;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .big-paragraph {
     font-size: 1.5rem;
   }
@@ -138,7 +138,7 @@ ul > li:before {
 .row-right {
   flex-grow: 1;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 768px) {
   .row {
     flex-direction: column;
   }
