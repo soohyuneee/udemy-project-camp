@@ -351,16 +351,16 @@ h3 {
   font-size: 18px;
 }
 
-.review_content,
-.review_hide {
+.review_content {
   margin-top: 34px;
   color: #6b7684;
   font-weight: 500;
   font-size: 18px;
   line-height: 32px;
+  text-align: left;
 }
 
-.review_hide {
+.review_short {
   display: none;
 }
 
@@ -551,6 +551,11 @@ footer li:last-child {
   footer div {
     margin-left: 44px;
   }
+
+  #review_container li {
+    margin-left: 18px;
+    margin-right: 18px;
+  }
 }
 
 /* 480 */
@@ -633,7 +638,7 @@ footer li:last-child {
 
   #review_container li {
     min-width: 330px;
-    min-height: 296px;
+    min-height: 323px;
     padding: 32px;
   }
 
@@ -641,13 +646,12 @@ footer li:last-child {
     justify-content: center;
   }
 
-  .review_content:nth-child(2) {
+  .review_hide {
     display: none;
   }
 
-  .review_hide {
-    margin-top: 25px;
-    display: block;
+  .review_short {
+    display: inline;
   }
 
   aside h2 {
