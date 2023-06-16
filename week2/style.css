@@ -325,10 +325,7 @@ h3 {
   min-width: 560px;
   height: 240px;
   padding: 60px;
-}
-
-#review_container li:nth-child(2) {
-  margin: 0 32px;
+  margin-left: 32px;
 }
 
 .profile_wrapper {
