@@ -6,6 +6,7 @@
 구)세이프홈즈 랜딩페이지 반응형 퍼블리싱
 1차 과제 : 주어진 Figma를 보고 랜딩페이지의 HTML 작성
 2차 과제 : 주어진 Figma를 보고 랜딩페이지의 CSS 작성 및 반응형 적용
+3차 과제 : 하단의 후기 부분을 JavaScript로 슬라이드 기능 구현
 ```
 <br/> 
 
@@ -46,3 +47,11 @@
 - HTML로 나눈 영역별로 id를 지정하여 나누어 CSS 작성
 - CSS 선택자와 flex 속성을 적극 활용하여 레이아웃 작성
 - 파비콘 적용 후 vercel로 배포
+<br/>
+
+### 3차 과제
+- JavaScript로 슬라이드 기능을 구현
+- querySelectorAll로 li 요소들을 NodeList로 받아와서 slides라는 변수에 할당
+- nextSlide 함수 : 다음 슬라이드를 보여주는 함수, forEach를 사용하여 slides를 순회하며 인덱스를 비교
+- CSS의 order 속성을 이용하여 슬라이드의 순서를 조절
+- setInterval로 5초마다 nextSlide 함수가 실행되게 구현
