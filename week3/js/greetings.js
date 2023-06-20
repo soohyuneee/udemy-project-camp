@@ -7,7 +7,7 @@ const section = document.querySelector('#greeting-section');
 const HIDDEN_CLASSNAME = 'hidden';
 const USERNAME_KEY = 'username';
 
-function onLogoutHandler(event) {
+function onLogoutHandler() {
   localStorage.removeItem(USERNAME_KEY);
   location.reload();
 }
