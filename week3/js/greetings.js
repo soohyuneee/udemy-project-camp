@@ -32,10 +32,10 @@ function paintGreetings(username) {
     greeting.innerText = `Good evening, ${username}.`;
   }
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  const button = document.createElement('button');
-  button.innerText = 'x';
-  button.addEventListener('click', onLogoutHandler);
-  section.appendChild(button);
+  const logout = document.getElementById('logout');
+  logout.classList.remove(HIDDEN_CLASSNAME);
+  logout.addEventListener('click', onLogoutHandler);
+  section.appendChild(logout);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
