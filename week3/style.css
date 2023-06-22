@@ -38,9 +38,9 @@ button {
   background: transparent;
   color: white;
   opacity: 80%;
-  font-size: 2em;
-  font-weight: 100;
+  font-weight: 700;
   padding-bottom: 0.2em;
+  font-size: 1.7em;
 }
 
 button:hover {
@@ -68,6 +68,16 @@ input:focus {
   outline: none;
 }
 
+li {
+  list-style: none;
+  margin-top: 1em;
+}
+
+li span {
+  font-size: 1.5em;
+  margin-right: 0.6em;
+}
+
 .hidden {
   display: none;
 }
@@ -85,4 +95,35 @@ input:focus {
 #greeting-section {
   display: flex;
   margin-left: 0.3em;
+}
+
+#todo-form {
+  margin-top: 2em;
+}
+
+#weather {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: 0.05em;
+}
+
+#weather span:first-child {
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+#weather span:last-child {
+  font-size: 1.2em;
+  text-align: right;
+  margin-right: 0.7em;
+}
+
+#logout {
+  position: fixed;
+  top: 20px;
+  left: 30px;
+  font-size: 2em;
 }
