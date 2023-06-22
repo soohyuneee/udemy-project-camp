@@ -8,7 +8,7 @@ const HIDDEN_CLASSNAME = 'hidden';
 const USERNAME_KEY = 'username';
 
 function onLogoutHandler() {
-  localStorage.removeItem(USERNAME_KEY);
+  localStorage.clear();
   location.reload();
 }
 
