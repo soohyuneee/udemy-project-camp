@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Greeting from './Greeting';
 
-function Login({ USERNAME_KEY, greeting }) {
+function Login() {
   const [username, setUsername] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    if (localStorage.getItem(USERNAME_KEY)) {
+    if (localStorage.getItem('username')) {
       setIsLoggedIn(true);
     }
   }, []);
@@ -17,7 +17,7 @@ function Login({ USERNAME_KEY, greeting }) {
 
   const handleUsernameSubmit = (event) => {
     event.preventDefault();
-    localStorage.setItem(USERNAME_KEY, username);
+    localStorage.setItem('username', username);
     setIsLoggedIn(true);
     setUsername('');
   };
@@ -26,7 +26,7 @@ function Login({ USERNAME_KEY, greeting }) {
     <>
       {isLoggedIn ? (
         <>
-          <Greeting USERNAME_KEY={USERNAME_KEY} setIsLoggedIn={setIsLoggedIn} greeting={greeting} />
+          <Greeting setIsLoggedIn={setIsLoggedIn} />
         </>
       ) : (
         <>
