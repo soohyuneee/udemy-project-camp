@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Login from './Login';
 
 function Clock() {
   const [time, setTime] = useState(new Date());
@@ -19,7 +18,6 @@ function Clock() {
   return (
     <>
       <h2 id="clock">{`${hours}:${minutes}`}</h2>
-      <Login />
     </>
   );
 }
