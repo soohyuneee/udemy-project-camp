@@ -49,10 +49,7 @@ button:hover {
 }
 
 input {
-  border-left-width: 0;
-  border-right-width: 0;
-  border-top-width: 0;
-  border-bottom-width: 1;
+  border-width: 0px 0px 1.5px 0px;
   width: 100%;
   border-color: white;
   background: transparent;
