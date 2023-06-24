@@ -11,7 +11,7 @@ function Background() {
   useEffect(() => {
     const randomNumber = Math.floor(Math.random() * images.length);
     setCurrentImageIndex(randomNumber);
-  }, []);
+  }, [images.length]);
 
   return (
     <>
