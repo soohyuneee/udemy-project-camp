@@ -25,6 +25,11 @@
 - momentum 클론 코딩
 - React로 배경이미지 랜덤 변경, 인사, 시계 기능 구현
 - React로 할 일 목록, 내 위치 날씨 조회 기능 구현
+
+### Movie-App (23.06.26 ~ 23.06.27)
+- 영화 API를 활용하여 Movie App 구현
+- React-Router로 영화 상세페이지 이동 구현
+- CSS Module로 CSS 작성 및 Grid 적용
 <br>
 
 ## 💬 커밋 컨벤션
