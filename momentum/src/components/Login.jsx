@@ -30,8 +30,8 @@ function Login({ savedUsername }) {
         </>
       ) : (
         <>
-          <p id="login">What is your name?</p>
           <form id="login-form" onSubmit={handleUsernameSubmit}>
+            <p>What is your name?</p>
             <input autoFocus required maxLength="15" type="text" onChange={handleUsernameChange} value={username} />
           </form>
         </>
