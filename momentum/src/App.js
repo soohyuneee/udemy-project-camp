@@ -6,14 +6,13 @@ import TodoList from 'components/TodoList';
 import Weather from 'components/Weather';
 
 function App() {
-  const savedUsername = localStorage.getItem('username');
   const savedTodos = JSON.parse(localStorage.getItem('todos')) || [];
 
   return (
     <>
       <Background />
       <Clock />
-      <Login savedUsername={savedUsername} />
+      <Login />
       <TodoList initialTodos={savedTodos} />
       <Weather />
     </>

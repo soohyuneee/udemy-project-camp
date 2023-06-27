@@ -1,14 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import { TbLogout2 } from 'react-icons/tb';
 
-function Greeting({ setIsLoggedIn, savedUsername }) {
+function Greeting({ setIsLoggedIn }) {
   const [greeting, setGreeting] = useState('');
+
   const handleLogout = () => {
     setIsLoggedIn(false);
     localStorage.clear();
+    window.location.reload();
   };
 
   useEffect(() => {
+    const savedUsername = localStorage.getItem('username');
+
     const timer = setInterval(() => {
       const hour = new Date().getHours();
       if (hour >= 6 && hour < 11) {
