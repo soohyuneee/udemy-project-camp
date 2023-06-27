@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Greeting from './Greeting';
 
-function Login() {
+function Login({ savedUsername }) {
   const [username, setUsername] = useState('');
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    if (localStorage.getItem('username')) {
+    if (savedUsername) {
       setIsLoggedIn(true);
     }
   }, []);
@@ -26,7 +26,7 @@ function Login() {
     <>
       {isLoggedIn ? (
         <>
-          <Greeting setIsLoggedIn={setIsLoggedIn} />
+          <Greeting setIsLoggedIn={setIsLoggedIn} savedUsername={savedUsername} />
         </>
       ) : (
         <>
