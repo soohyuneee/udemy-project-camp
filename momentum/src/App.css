@@ -80,17 +80,18 @@ li span {
 
 #clock {
   font-size: 7em;
+  text-align: center;
 }
 
 #greeting {
   font-size: 2.5em;
   font-weight: 400;
-  margin-right: 0.3em;
 }
 
 #greeting-section {
+  width: 100%;
   display: flex;
-  margin-left: 0.3em;
+  justify-content: center;
 }
 
 #todo-form {
