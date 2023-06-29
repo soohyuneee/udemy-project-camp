@@ -68,7 +68,7 @@ Movie App 만들기
 - 데이터 요청이 완료된 후에 로딩 상태를 false로 변경
   
 **CSS**
-- CSS Module을 사용하여 CSS를 분리하여 작성 및 CSS 클래스 중첩 방지
+- CSS Module을 사용하여 CSS 클래스 중첩 방지
 - Grid를 사용하여 Movie 컴포넌트를 갤러리 형태로 배치
 - 해당 영화 포스터 위에 마우스가 hover되면 요약 내용 오버레이
 <br/> 
