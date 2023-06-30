@@ -4,9 +4,8 @@
 
 ```
 Movie App 만들기
-- 영화 API를 활용하여 Movie App 구현
-- React-Router로 영화 상세페이지 이동 구현
-- CSS Module로 CSS 작성 및 Grid 적용
+1차 과제 : 영화 API를 활용하여 Movie App 구현
+2차 과제 : 영화 데이터를 처리하는 Custom hook 작성
 ```
 <br/> 
 
@@ -31,6 +30,8 @@ Movie App 만들기
  ┣ 📂components
  ┃ ┣ 📜Loding.js
  ┃ ┗ 📜Movie.js
+ ┣ 📂hooks
+ ┃ ┗ 📜useFetchMovies.js
  ┣ 📂pages
  ┃ ┣ 📜Detail.js
  ┃ ┗ 📜Home.js
@@ -45,6 +46,7 @@ Movie App 만들기
 ```
 
 ## 📝 과제 설명
+### 1차 과제
 **Home 페이지**
 - 영화 API를 활용하여 평점 9점 이상의 연도별로 정렬된 영화 데이터 요청
 - useState로 영화 데이터의 상태를 관리하고, 요청 받은 영화 데이터로 상태 변경
@@ -71,4 +73,12 @@ Movie App 만들기
 - CSS Module을 사용하여 CSS 클래스 중첩 방지
 - Grid를 사용하여 Movie 컴포넌트를 갤러리 형태로 배치
 - 해당 영화 포스터 위에 마우스가 hover되면 요약 내용 오버레이
+
+### 2차 과제
+**useFetchMovies**
+- 영화 API를 활용하여 데이터를 처리하는 커스텀 훅
+- useFetchMovies의 첫 번째 매개변수로는 url을 받고, 두 번째 매개변수로는 type을 받아 해당 type의 data로 상태 변경
+- getMovies 함수 : 영화 API에 HTTP 요청을 보내고 응답을 받아오는 함수로, async-await을 사용하여 비동기 처리
+- try-catch문을 활용하여 에러 핸들링, finally로 데이터 요청이 끝나면 로딩 상태를 false로 변경
+- 로딩 상태, 영화 데이터를 반환 받아 Home, Detail 페이지의 데이터 처리 로직 중복 문제 해결
 <br/> 
