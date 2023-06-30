@@ -1,25 +1,11 @@
-import { useEffect, useState } from 'react';
 import Movie from 'components/Movie';
 import styles from 'styles/Home.module.css';
 import Loading from 'components/Loding';
+import useFetchMovies from 'hooks/useFetchMovies';
 
 function Home() {
-  const [loading, setLoading] = useState(true);
-  const [movies, setMovies] = useState([]);
-
   const minRating = 9;
-
-  const getMovies = async () => {
-    const json = await (
-      await fetch(`https://yts.mx/api/v2/list_movies.json?minimum_rating=${minRating}&sort_by=year`)
-    ).json();
-    setMovies(json.data.movies);
-    setLoading(false);
-  };
-
-  useEffect(() => {
-    getMovies();
-  }, []);
+  const { movies, loading } = useFetchMovies(`/list_movies.json?minimum_rating=${minRating}&sort_by=year`, 'movies');
 
   return (
     <>
