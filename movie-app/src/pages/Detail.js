@@ -2,10 +2,19 @@ import { useParams } from 'react-router-dom';
 import styles from 'styles/Detail.module.css';
 import Loading from 'components/Loding';
 import useFetchMovies from 'hooks/useFetchMovies';
+import { useEffect, useState } from 'react';
 
 function Detail() {
   const { id } = useParams();
-  const { movies, loading } = useFetchMovies(`/movie_details.json?movie_id=${id}`, 'movie');
+  const { movies, loading } = useFetchMovies();
+  const [movie, setMovie] = useState([]);
+
+  useEffect(() => {
+    const selectMovie = movies.filter((item) => String(item.id) === id);
+    if (selectMovie.length > 0) {
+      setMovie(selectMovie[0]);
+    }
+  }, [id, movies]);
 
   return (
     <div>
@@ -14,16 +23,16 @@ function Detail() {
       ) : (
         <div className={styles.detail}>
           <div className={styles.coverImg}>
-            <img src={movies.large_cover_image} alt="coverImg" />
+            <img src={movie.large_cover_image} alt="coverImg" />
           </div>
           <div className={styles.desc}>
-            <h1>{movies.title}</h1>
+            <h1>{movie.title}</h1>
             <ul>
-              {movies.genres.map((g) => (
+              {movie.genres?.map((g) => (
                 <li key={g}>{g}</li>
               ))}
             </ul>
-            <p>{movies.description_full}</p>
+            <p>{movie.description_full}</p>
           </div>
         </div>
       )}
