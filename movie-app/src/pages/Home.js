@@ -4,8 +4,7 @@ import Loading from 'components/Loding';
 import useFetchMovies from 'hooks/useFetchMovies';
 
 function Home() {
-  const minRating = 9;
-  const { movies, loading } = useFetchMovies(`/list_movies.json?minimum_rating=${minRating}&sort_by=year`, 'movies');
+  const { movies, loading } = useFetchMovies();
 
   return (
     <>
