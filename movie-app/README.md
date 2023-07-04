@@ -6,6 +6,7 @@
 Movie App 만들기
 1차 과제 : 영화 API를 활용하여 Movie App 구현
 2차 과제 : 영화 데이터를 처리하는 Custom hook 작성
+3차 과제 : Redux를 사용하여 데이터 흐름 관리
 ```
 <br/> 
 
@@ -35,6 +36,10 @@ Movie App 만들기
  ┣ 📂pages
  ┃ ┣ 📜Detail.js
  ┃ ┗ 📜Home.js
+ ┣ 📂redux
+ ┃ ┣ 📜LoadingSlice.js
+ ┃ ┣ 📜MovieSlice.js
+ ┃ ┗ 📜store.js
  ┣ 📂styles
  ┃ ┣ 📜Detail.module.css
  ┃ ┣ 📜Global.module.css
@@ -81,4 +86,12 @@ Movie App 만들기
 - getMovies 함수 : 영화 API에 HTTP 요청을 보내고 응답을 받아오는 함수로, async-await을 사용하여 비동기 처리
 - try-catch문을 활용하여 에러 핸들링, finally로 데이터 요청이 끝나면 로딩 상태를 false로 변경
 - 로딩 상태, 영화 데이터를 반환 받아 Home, Detail 페이지의 데이터 처리 로직 중복 문제 해결
+
+### 3차 과제
+**Redux**
+- Redux-Toolkit을 사용하여 데이터 흐름 관리
+- MovieSlice : 영화 API를 활용하여 요청받은 영화 데이터의 상태 관리
+- LoadingSlice : 요청을 보내고 응답을 받아오기 전까지의 로딩 상태 관리
+- useFetchMovies 커스텀 훅에서 useSelector로 상태를 조회 후 dispatch 함수로 상태 변경
+- Detail 페이지에서 useParams로 추출한 id 값과 일치하는 영화의 상세 정보를 useState로 상태 관리
 <br/> 
